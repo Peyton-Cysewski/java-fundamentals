@@ -7,4 +7,4 @@ In the Main file there are a few functions that allowed me to write my first Jav
 
 <br>
 
-[Table of Contents](..)
+[Table of Contents](../../..)
