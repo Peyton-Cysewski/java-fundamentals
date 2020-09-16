@@ -19,7 +19,7 @@ public class App {
                     line.contains("else")
                 ) {
                 } else {
-                    throw new Exception("There was an error on line: " + lineNumber);
+                    throw new Exception("There was an error on line " + lineNumber + ": Missing semicolon.");
                 }
                 lineNumber++;
             }

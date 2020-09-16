@@ -20,3 +20,6 @@ Analyzing Weather Data: Use the October Seattle weather data above. Iterate thro
 <br>
 Tallying Election: Write a function called tally that accepts a List of Strings representing votes and returns one string to show what got the most votes.
 <br>
+Linter: Write a method that reads a JavaScript file with a given Path, and generates an error message whenever it finds a line that doesn’t end in a semi-colon.
+<br>
+Testing: The first two tasks are normal tests that check the tests work. The last test for the linter required a few custom JavaScript files meant to test the edge cases that the linter should catch.
