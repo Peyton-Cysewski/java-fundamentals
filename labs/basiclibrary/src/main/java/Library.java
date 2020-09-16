@@ -49,4 +49,28 @@ public class Library {
         }
         return lowestArr;
     }
+
+    public void analyzeWeather(int[][] month){
+        int low = month[0][0];
+        int high = month[0][0];
+        HashSet<Integer> temps = new HashSet<>();
+        for (int[] week : month){
+            for (int day : week){
+                temps.add(day);
+                if (day < low){
+                    low = day;
+                }
+                if (day > high){
+                    high = day;
+                }
+            }
+        }
+        System.out.println("High: " + high);
+        System.out.println("Low: " + low);
+        for (int counter = low; counter <= high; counter++){
+            if (!temps.contains(counter)){
+                System.out.println("Never saw temperature: " + counter);
+            }
+        }
+    }
 }

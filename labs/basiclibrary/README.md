@@ -12,3 +12,11 @@ Calculating Averages: Write a method that accepts an array of integers and calcu
 Array of Arrays: Given an array of arrays calculate the average value for each array and return the array with the lowest average.
 <br>
 Testing: Each of these feature tasks have tests written in JUnit. They can be run using Gradle both in IntelliJ and the command line.
+
+## Lab 03 | Maps and File I/O
+
+### Feature Tasks
+Analyzing Weather Data: Use the October Seattle weather data above. Iterate through all of the data to find the min and max values. Use a HashSet of type Integer to keep track of all the unique temperatures seen. Finally, iterate from the min temp to the max temp and create a String containing any temperature not seen during the month. Return that String.
+<br>
+Tallying Election: Write a function called tally that accepts a List of Strings representing votes and returns one string to show what got the most votes.
+<br>
