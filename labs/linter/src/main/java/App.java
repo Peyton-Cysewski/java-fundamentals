@@ -8,15 +8,38 @@ public class App {
     public static void main(String[] args) {
         try {
             Scanner scanner = new Scanner(new File("src/main/resources/gates.js"));
+            scanFile(scanner);
+//            int lineNumber = 1;
+//            while (scanner.hasNextLine()){
+//                String line = scanner.nextLine();
+//                if (
+//                    line == "" ||
+//                    line.endsWith("{") ||
+//                    line.endsWith("}") ||
+//                    line.contains("if") ||
+//                    line.contains("else")
+//                ) {
+//                } else {
+//                    throw new Exception("There was an error on line " + lineNumber + ": Missing semicolon.");
+//                }
+//                lineNumber++;
+//            }
+        } catch (Exception e){
+            System.out.println(e.getMessage());
+        }
+    }
+
+    public static void scanFile(Scanner file){
+        try {
             int lineNumber = 1;
-            while (scanner.hasNextLine()){
-                String line = scanner.nextLine();
+            while (file.hasNextLine()){
+                String line = file.nextLine();
                 if (
-                    line == "" ||
-                    line.endsWith("{") ||
-                    line.endsWith("}") ||
-                    line.contains("if") ||
-                    line.contains("else")
+                        line == "" ||
+                                line.endsWith("{") ||
+                                line.endsWith("}") ||
+                                line.contains("if") ||
+                                line.contains("else")
                 ) {
                 } else {
                     throw new Exception("There was an error on line " + lineNumber + ": Missing semicolon.");
