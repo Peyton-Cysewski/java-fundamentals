@@ -38,4 +38,5 @@ public class Business implements Reviewable {
             this.setStars(starTotal / reviews.size());
         }
     }
+
 }

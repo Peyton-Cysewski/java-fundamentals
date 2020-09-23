@@ -11,9 +11,9 @@ public class RestaurantTest {
 
         Restaurant Zeeks = new Restaurant(name, rating, price);
 
-        assertEquals(name, Zeeks.name);
-        assertEquals(rating, Zeeks.stars);
-        assertEquals(price, Zeeks.price);
+        assertEquals(name, Zeeks.getName());
+        assertEquals(rating, Zeeks.getStars(), 0);
+        assertEquals(price, Zeeks.getPrice());
         assertNotNull(Zeeks);
     }
 
@@ -41,8 +41,8 @@ public class RestaurantTest {
 
         Zeeks.addReview(review);
 
-        assertEquals(5, Zeeks.stars);
-        assertEquals(1, Zeeks.reviews.size());
-        assertEquals("Zeeks Pizza", Zeeks.reviews.get(0).name);
+        assertEquals(5, Zeeks.getStars(), 0);
+        assertEquals(1, Zeeks.getReviews().size());
+        assertEquals("Zeeks Pizza", Zeeks.getName());
     }
 }
