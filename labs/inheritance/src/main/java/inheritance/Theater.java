@@ -15,7 +15,7 @@ public class Theater extends Business {
 
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append(String.format("%s has a %d star rating. It is currently showing:\n", this.getName(), this.getStars()));
+        sb.append(String.format("%s has a %d star rating. It is currently showing:\n", this.getName(), (int)this.getStars()));
         for (String movie : movies) {
             sb.append(String.format("%s\n", movie));
         }
