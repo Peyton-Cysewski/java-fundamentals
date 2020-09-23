@@ -6,7 +6,7 @@ import static org.junit.Assert.*;
 public class ReviewTest {
     @Test public void testCanInstantiate() {
         String author = "Bob Smith";
-        int rating = 5;
+        float rating = 5;
         String body = "The pizza is the best in the area!";
 
         Review review = new Review(body, rating, author);
